@@ -1,0 +1,67 @@
+.outerArticleBox{
+    width: 560px;
+    height: 788px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: red;
+}
+
+.outerArticleBox h2 {
+    font-size: 42px;
+    font-weight: 400;
+    color: black;
+    line-height: 40px;
+}
+.imageArticleBox{
+    width: 560px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.infoArticleBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.infoArticleBox span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.authorArticleBox {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: black;
+}
+
+.dateArticleBox {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgba(108, 117, 125, 1);
+}
+
+.summaryArticleBox{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 149.7%;
+    color: rgba(108, 117, 125, 1);
+}
+
+.buttonArticleBox {
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}

@@ -1,0 +1,22 @@
+.galleryOuter {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.btnGallery {
+    width: 240px;
+    height: 54px;
+    border-radius: 2px;
+    border: 1px solid #121416;
+    background-color: transparent;
+    color: rgba(18, 20, 22, 0.6);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+}

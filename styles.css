@@ -1,0 +1,11 @@
+@font-face {
+    font-family: europa;
+    src: url("/public/fonts/europa.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "europa";
+}
