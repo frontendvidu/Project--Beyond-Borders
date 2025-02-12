@@ -1,11 +1,13 @@
 .galleryOuter {
-    width: 100%;
+    width: 100vw;
+    height: 2883px;
     background-color: aqua;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    overflow: hidden;
 }
 
 .btnGallery {

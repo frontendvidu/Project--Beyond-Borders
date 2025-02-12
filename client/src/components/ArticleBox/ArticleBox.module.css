@@ -1,6 +1,6 @@
 .outerArticleBox{
     width: 560px;
-    height: 788px;
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
