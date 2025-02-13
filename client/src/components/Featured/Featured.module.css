@@ -1,0 +1,63 @@
+.featuredOuter {
+    width: 80%;
+    height: 600px;
+    background: linear-gradient(rgba(52, 58, 64, 0.3),rgba(52, 58, 64, 0.3)),url("/images/Featured.png");
+    background-size: cover;
+    background-position: center;
+    margin: 180px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredInner {
+    width: 987px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: transparent;
+
+}
+
+.featuredInner div {
+    width: 86px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredInner h2 {
+    color: white;
+    font-size: 48px;
+    line-height: 95.2%;
+    letter-spacing: -3.5%;
+    font-weight: 400;
+}
+
+.featuredInner p {
+    color: white;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.featuredInner button {
+    color: #7A65E1;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #7F7D85;
+    border-radius: 2px;
+    width: 320px;
+    height: 64px;
+}
