@@ -1,16 +1,119 @@
 .footerOuter {
     width: 100%;
-    height: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    gap: 64px;
+    padding: 64px 352px 0px;
+}
+.footerAboutSection{
+    width: 289px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: transparent;
+    overflow: hidden; /* or auto if you want scrolling */
+}
+
+.footerAboutSection div{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: transparent;
+    gap: 12px;
+}
+
+.footerSpan {
+        display: block;
+        width: 100%;
+}
+
+.footerHeadings {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #181A2A;
+}
+
+.footerParagraph {
+    font-size: 16px;
+    font-weight: 400;
+    color: #696A75;
+    padding: 0;
+}
+
+.footerEmailPhone {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696A75;
+}
+
+.footerEmailPhone span {
+    font-weight: 700;
+    color: black;
+}
+
+.footerNavLinks {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3B3C4A;
+    display:block;
+    text-decoration: none;
+}
+
+.upperFooterSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 1216px;
+    height: 254px;
+    background-color: transparent;
+}
+
+.footerForm {
+    background-color: red;
+    width: 392px;
+    height: 254px;
+    border-radius: 12px;
+}
+
+.lowerFooter {
+    background-color: transparent;
+    width: 1216px;
+    height: 118px;
+    border: none;
+    border-top: 1px solid #DCDDDF;
+}
+
+.lowerFooter {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
 }
 
-.footerOuter p {
-    color: white;
-    font-size: 20px;
+.lowerFooter p {
+    font-size: 16px;
     font-weight: 400;
-    line-height: 40px;
-    padding: 40px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.lowerFooter a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3B3C4A;
+    text-decoration: none;
+    margin-left: 16px;
 }

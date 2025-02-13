@@ -1,22 +1,26 @@
 .outerArticleBox{
-    width: 560px;
-    height: auto;
+    width: 392px;
+    height: 488px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    background-color: red;
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #c5c5c5;
 }
 
 .outerArticleBox h2 {
-    font-size: 42px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     color: black;
-    line-height: 40px;
+    line-height: 28px;
 }
 .imageArticleBox{
-    width: 560px;
-    height: 420px;
+    width: 360px;
+    height: 240px;
+    border-radius: 6px;
     object-fit: cover;
     object-position: center;
 }
@@ -25,42 +29,50 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 .infoArticleBox span {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: aqua;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.authorImage {
+    width: 36px;
+    height: 36px;
+    border-radius: 28px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .authorArticleBox {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
-    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #97989F;
 }
 
 .dateArticleBox {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 40px;
-    color: rgba(108, 117, 125, 1);
+    font-size: 16px;
+    line-height: 24px;
+    color: #97989F;
 }
 
 .summaryArticleBox{
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 149.7%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
     color: rgba(108, 117, 125, 1);
 }
 
 .buttonArticleBox {
     background-color: transparent;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     color: black;
     border: none;
     border-bottom: 2px solid black;

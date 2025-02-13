@@ -1,18 +1,20 @@
 import styles from "./Articlebox.module.css";
-import blogimage from "../../images/blogimage.png";
-import author from "../../images/author.png";
 const ArticleBox = (props) => {
   return (
     <div className={styles.outerArticleBox}>
       <img
-        src={blogimage}
+        src={props.imageBlog}
         alt="blog image"
         className={styles.imageArticleBox}
       />
       <h2>{props.title}</h2>
       <div className={styles.infoArticleBox}>
         <span>
-          <img src={author} alt="author image" />
+          <img
+            src={props.imageAuthor}
+            alt="author image"
+            className={styles.authorImage}
+          />
           <p className={styles.authorArticleBox}>{props.author}</p>
         </span>
         <p className={styles.dateArticleBox}>{props.datePublished}</p>
