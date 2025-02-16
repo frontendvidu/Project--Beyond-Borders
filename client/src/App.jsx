@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Featured from "./components/Featured/Featured";
 import Country from "./components/Country/Country";
+import Grid from "./components/Grid/Grid";
 function App() {
   const [articles, setArticles] = useState([]);
   const fetchTheArticles = async () => {
@@ -28,6 +29,7 @@ function App() {
       <ArticleGallery articlesFetched={articles} />
       <Featured />
       <Country />
+      <Grid />
       <Footer />
     </>
   );

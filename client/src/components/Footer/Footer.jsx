@@ -1,3 +1,4 @@
+import Form from "../Form/Form";
 import styles from "./Footer.module.css";
 const Footer = () => {
   return (
@@ -63,7 +64,9 @@ const Footer = () => {
             Sports
           </a>
         </nav>
-        <div className={styles.footerForm}>{/* form */}</div>
+        <div className={styles.footerForm}>
+          <Form />
+        </div>
       </div>
       <div className={styles.lowerFooter}>
         <p>Lakshan Vidusen, All rights Reserved</p>

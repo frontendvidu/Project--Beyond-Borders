@@ -1,0 +1,56 @@
+.formOuter{
+    width: 392px;
+    height: 254px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.formOuter h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 24px;
+}
+
+.formOuter p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #696A75;
+    line-height: 24px;
+}
+
+.formOuter form {
+    width: 320px;
+    height: 104px;
+}
+
+.formOuter input {
+    width: 100%;
+    border: 1px solid #DCDDDF;
+    background-color: white;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+.formOuter input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #97989F;
+    line-height: 24px;
+}
+.formOuter button {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #DCDDDF;
+    background-color: #4B6BFB;
+    border-radius: 6px;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
