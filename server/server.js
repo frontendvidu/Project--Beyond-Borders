@@ -23,8 +23,12 @@ const blogSchema = new mongoose.Schema({
   authorImage: String,
 });
 
-const Blog = mongoose.model("Blog", blogSchema, "articles");
+const emailSchema = new mongoose.Schema({
+  email: { type: String, required: true },
+});
 
+const Blog = mongoose.model("Blog", blogSchema, "articles");
+const Email = mongoose.model("Email", emailSchema, "emails");
 app.get("/", (req, res) => {
   res.send("Hello from the server");
 });
@@ -37,6 +41,16 @@ app.get("/articles", async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: "Error fetching blogs", error: err });
   }
+});
+
+app.post("/emails", async (req, res) => {
+  const data = req.body; //JSON has become a Js OBJECT due to middleware
+  try {
+    await Email.create({ email: data.clientEmail });
+  } catch (err) {
+    console.log("Server side, email didnt go to mongoDB", err);
+  }
+  res.status(201).json({ message: "data recieved", data });
 });
 
 app.listen(5000, () => {
