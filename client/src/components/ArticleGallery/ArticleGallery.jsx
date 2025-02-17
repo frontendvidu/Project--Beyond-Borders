@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import ArticleBox from "../ArticleBox/ArticleBox";
 import styles from "./ArticleGallery.module.css";
 const ArticleGallery = (props) => {
+  const navigate = useNavigate();
   return (
     <div className={styles.galleryOuter}>
       <div className={styles.galleryBlogOuter}>
@@ -15,7 +17,14 @@ const ArticleGallery = (props) => {
           />
         ))}
       </div>
-      <button className={styles.btnGallery}>Load More</button>
+      <button
+        onClick={() => {
+          navigate("/blogs/all");
+        }}
+        className={styles.btnGallery}
+      >
+        Load More
+      </button>
     </div>
   );
 };

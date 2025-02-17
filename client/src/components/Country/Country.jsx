@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./Country.module.css";
 const Country = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.outerCategory}>
       <div className={styles.innerCategory}>
@@ -7,10 +9,34 @@ const Country = () => {
         <p>Tick one more of your bucket list and enjoy your life</p>
       </div>
       <div className={styles.innerButtons}>
-        <button>Dominican Republic</button>
-        <button>France</button>
-        <button>Republic of China</button>
-        <button>Brazil</button>
+        <button
+          onClick={() => {
+            navigate("/blogs/country/dominicanrepublic");
+          }}
+        >
+          Dominican Republic
+        </button>
+        <button
+          onClick={() => {
+            navigate("/blogs/country/france");
+          }}
+        >
+          France
+        </button>
+        <button
+          onClick={() => {
+            navigate("/blogs/country/china");
+          }}
+        >
+          Republic of China
+        </button>
+        <button
+          onClick={() => {
+            navigate("/blogs/country/brazil");
+          }}
+        >
+          Brazil
+        </button>
       </div>
     </div>
   );

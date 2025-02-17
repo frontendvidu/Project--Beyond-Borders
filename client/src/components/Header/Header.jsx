@@ -1,15 +1,18 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div className={styles.outerHeader}>
-      <img src="/images/logo.png" alt="LOGO" />
+      <NavLink to="/">
+        <img src="/images/logo.png" alt="LOGO" />
+      </NavLink>
       <nav className={styles.navHeader}>
-        <a href="">HOME</a>
-        <a href="">DESTINATIONS</a>
-        <a href="">FOOD</a>
-        <a href="">SPORT</a>
-        <a href="">FAMILY</a>
-        <a href="">LIFESTYLE</a>
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to="/blogs/category/travel">DESTINATIONS</NavLink>
+        <NavLink to="/blogs/category/sport">FOOD</NavLink>
+        <NavLink to="/blogs/category/sport">SPORT</NavLink>
+        <NavLink to="/blogs/category/food">FAMILY</NavLink>
+        <NavLink to="/blogs/category/food">LIFESTYLE</NavLink>
       </nav>
       <form action="">
         <input type="search" />

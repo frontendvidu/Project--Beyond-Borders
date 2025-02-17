@@ -15,10 +15,14 @@ const Form = () => {
         },
         body: JSON.stringify({ clientEmail: email }),
       });
+      const response = await sendEmail.json();
+      if (response.success) {
+        console.log("Successfully send the data to the MongoDB");
+      }
+      setEmail("");
     } catch (e) {
       console.log(e, "error when POSTING email data");
     }
-    setEmail("");
   };
   return (
     <div className={styles.formOuter}>
