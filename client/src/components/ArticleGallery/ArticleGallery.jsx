@@ -3,6 +3,7 @@ import ArticleBox from "../ArticleBox/ArticleBox";
 import styles from "./ArticleGallery.module.css";
 const ArticleGallery = (props) => {
   const navigate = useNavigate();
+  console.log(props.articlesFetched, "<<< his is the article gallery prop");
   return (
     <div className={styles.galleryOuter}>
       <div className={styles.galleryBlogOuter}>

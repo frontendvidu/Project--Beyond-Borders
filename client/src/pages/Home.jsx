@@ -30,7 +30,7 @@ const Home = () => {
       <ArticleGallery articlesFetched={articles} />
       <Featured />
       <Country />
-      <Grid />
+      <Grid fetchedArticles={articles} />
       <Footer />
     </>
   );

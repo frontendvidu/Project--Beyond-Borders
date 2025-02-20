@@ -1,11 +1,11 @@
 import styles from "./Grid.module.css";
-const FeaturedSide = () => {
+const FeaturedSide = (props) => {
   return (
     <div className={styles.featuredSideOuter}>
-      <img src="/images/sidpicremove.png" alt="" />
+      <img src={props.previewImage} alt="pic" />
       <div className={styles.featuredSideInner}>
-        <h3>Akam Ge Kill: Season finale</h3>
-        <p>21 March 2021</p>
+        <h3>{props.title}</h3>
+        <p>{props.datePublish}</p>
       </div>
     </div>
   );
